@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: MontSerrat; }
+
+.container {
+  max-width: 100%; }
+
+body {
+  width: 100%; }
+
+.header {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  justify-content: space-between; }
+  .header .navbar-brand {
+    color: red; }
+  .header span {
+    width: 40px;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    cursor: pointer;
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    background: rgba(87, 87, 87, 0.69); }
+    .header span:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgba(87, 87, 87, 0.69);
+      top: -10px;
+      transition: 0.5s all; }
+    .header span:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgba(87, 87, 87, 0.69);
+      bottom: -10px;
+      transition: 0.5s all; }
+  .header .navbar {
+    font-family: 'Montserrat'; }
+
+.logoPic {
+  padding-right: 60px;
+  padding-left: 60px; }
+  .logoPic .content-box {
+    width: 372px;
+    height: 437px;
+    border: 1px solid #a8b6af;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background: url("../image/header/picture1.png") center/cover; }
+    .logoPic .content-box__box {
+      width: 100%;
+      background: #D1A95490;
+      padding: 20px 15px;
+      margin-top: 280px; }
+    .logoPic .content-box__border {
+      border: 1px solid #ffffff; }
+    .logoPic .content-box__title {
+      text-align: center;
+      font-size: 30px;
+      color: #ffffff; }
+    .logoPic .content-box__subtitle {
+      font-size: 14px;
+      color: #ffffff;
+      text-align: center; }
+  .logoPic .content-box2 {
+    width: 372px;
+    height: 437px;
+    border: 1px solid #a8b6af;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background: url("../image/header/picture1.png") center/cover; }
+  .logoPic .content-box3 {
+    width: 372px;
+    height: 437px;
+    border: 1px solid #a8b6af;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background: url("../image/header/picture3.png") center/cover; }
+  .logoPic .slider-control {
+    text-align: center;
+    margin-top: 60px; }
+
+/*# sourceMappingURL=style.css.map */

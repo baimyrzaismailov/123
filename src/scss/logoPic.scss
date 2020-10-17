@@ -1,0 +1,85 @@
+.logoPic{
+  padding-right: 60px;
+  padding-left: 60px;
+  .content-box{
+    width: 372px;
+    height: 437px;
+    border: 1px solid #a8b6af;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background: url("../image/header/picture1.png") center/cover no-repeat;
+    &__box{
+      width: 100%;
+      background: #D1A95490;
+      padding: 20px 15px;
+      margin-top: 280px;
+    }
+    &__border{
+      border: 1px solid #ffffff;
+    }
+    &__title{
+      text-align: center;
+      font-size: 30px;
+      color: #ffffff;
+    }
+    &__subtitle{
+      font-size: 14px;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+.content-box2{
+  width: 372px;
+  height: 437px;
+  border: 1px solid #a8b6af;
+  overflow: hidden;
+  margin-bottom: 30px;
+  background: url("../image/header/picture2.png") center/cover no-repeat;
+}
+  .content-box3{
+    width: 372px;
+    height: 437px;
+    border: 1px solid #a8b6af;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background: url("../image/header/picture3.png") center/cover no-repeat;
+  }
+}
+@mixin customSliderBtn {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+.slider {
+
+
+  .box {
+    max-width: 750px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .owl-nav {
+    padding: 30px;
+
+
+    .customNextBtn {
+      @include customSliderBtn;
+      background: url(../image/header/arrow-right.png) no-repeat;
+      right: 0;
+      transform: translate(-575px, 20px);
+    }
+
+    .customPrevBtn {
+      @include customSliderBtn;
+      background: url(../image/header/arrow-left.png) no-repeat;
+      left: 0;
+      transform: translate(575px, 20px);
+    }
+  }
+
+}
